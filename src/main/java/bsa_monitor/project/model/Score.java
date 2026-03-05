@@ -6,21 +6,24 @@ public class Score {
     private int behaaldePunten;
 
     public Score(Vak vak, double cijfer) {
-        // TODO
+        this.vak = vak;
+        this.cijfer = cijfer;
+        if (cijfer >= vak.getCesuur()) {
+            this.behaaldePunten = vak.getPunten();
+        } else {
+            this.behaaldePunten = 0;
+        }
     }
 
     public Vak getVak() {
-        // TODO
-        return new Vak("",0,0);
+        return vak;
     }
 
     public double getCijfer() {
-        // TODO
-        return 0;
+        return cijfer;
     }
 
     public int getBehaaldePunten() {
-        //TODO
-        return 0;
+        return behaaldePunten;
     }
 }

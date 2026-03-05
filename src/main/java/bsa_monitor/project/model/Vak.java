@@ -6,21 +6,20 @@ public class Vak {
     private double cesuur;
 
     public Vak(String naam, int punten, double cesuur) {
-        // TODO
+        this.naam = naam;
+        this.punten = punten;
+        this.cesuur = cesuur;
     }
 
     public String getNaam() {
-        // TODO
-        return "";
+        return naam;
     }
 
     public int getPunten() {
-        // TODO
-        return 0;
+        return punten;
     }
 
     public double getCesuur() {
-        // TODO
-        return 0;
+        return cesuur;
     }
 }
